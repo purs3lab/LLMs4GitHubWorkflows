@@ -1,0 +1,229 @@
+{
+    "_comment" : "We collected events that trigger workflows and extracted corresponding descriptions from \"https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows\" and \"https://docs.github.com/en/webhooks-and-events/webhooks/webhook-events-and-payloads\". The top-level object key is the name of event. The second level object key is activity type. Specifically, \"default\" means that the user doesn't limit the workflow runs to specific activity types and all activity types related to this event can trigger workflows.",
+    "_note" : "activity types conflict: project_column",
+    "branch_protection_rule" : {
+        "created" : "a branch protection rule is created",
+        "deleted" : "a branch protection rule is deleted",
+        "edited" : "a branch protection rule is edited",
+        "default" : "activity related to a branch protection rule occurs" 
+    },
+    "check_run" : {
+        "completed" : "a check run is completed",
+        "created" : "a new check run is created",
+        "requested_action" : "someone requests a followup action after a check run completes",
+        "rerequested" : "someone requests to re-run a check run",
+        "default" : "activity related to a check run occurs"
+    },
+    "check_suite" : {
+        "completed" : "all check runs in a check suite have completed",
+        "default" : "check suite activity occurs"
+    },
+    "create" : {
+        "default" : "a Git branch or tag is created"
+    },
+    "delete" : {
+        "default" : "a Git branch or tag is deleted"
+    },
+    "deployment" : {
+        "default" : "a deployment is created"
+    },
+    "deployment_status" : {
+        "default" : "a new deployment status is created"
+    },
+    "discussion" : {
+        "created" : "a discussion is created",
+        "edited" : "the title or body on a discussion is edited or the category of the discussion is changed",
+        "deleted" : "a discussion is deleted",
+        "transferred" : "a discussion is transferred to another repository",
+        "pinned" : "a discussion is pinned",
+        "unpinned" : "a discussion is unpinned",
+        "labeled" : "a label is added to a discussion",
+        "unlabeled" : "a label is removed from a discussion",
+        "locked" : "a discussion is locked",
+        "unlocked" : "a discussion is unlocked",
+        "category_changed" : "the category of a discussion is changed",
+        "answered" : "a comment on the discussion is marked as the answer",
+        "unanswered" : "a comment on the discussion is unmarked as the answer",
+        "default" : "activity related to a discussion in the workflow's repository occurs"
+    },
+    "discussion_comment" : {
+        "created" : "a comment on a discussion is created",
+        "deleted" : "a comment on a discussion is deleted",
+        "edited" : "a comment on a discussion is edited",
+        "default" : "activity related to a comment on a discussion occurs"
+    },
+    "fork" : {
+        "default" : "someone forks a repository"
+    },
+    "gollum" : {
+        "default" : "someone creates or updates a wiki page"
+    },
+    "issue_comment" : {
+        "created" : "a comment on an issue or pull request is created",
+        "deleted" : "a comment on an issue or pull request is deleted",
+        "edited" : "a comment on an issue or pull request is edited",
+        "default" : "activity related to an issue or pull request comment occurs"
+    },
+    "issues" : {
+        "opened" : "an issue is opened",
+        "edited" : "the title or body on an issue is edited",
+        "deleted" : "an issue is deleted",
+        "transferred" : "an issue is transferred to another repository",
+        "pinned" : "an issue is pinned to a repository",
+        "unpinned" : "an issue is unpinned from a repository",
+        "closed" : "an issue is closed",
+        "reopened" : "a closed issue is reopened",
+        "assigned" : "an issue is assigned to a user",
+        "unassigned" : "a user is unassigned from an issue",
+        "labeled" : "a label is added to an issue",
+        "unlabeled" : "a label is removed from an issue",
+        "locked" : "conversation on an issue is locked",
+        "unlocked" : "conversation on an issue is unlocked",
+        "milestoned" : "an issue is added to a milestone",
+        "demilestoned" : "an issue is removed from a milestone",
+        "default" : "activity related to an issue occurs"
+    },
+    "label" : {
+        "created" : "a label is created",
+        "deleted" : "a label is deleted",
+        "edited" : "a label is edited",
+        "default" : "there is activity relating to labels"
+    },
+    "merge_group" : {
+        "checks_requested" : "status checks are requested for a merge group",
+        "default" : "there is activity relating to a merge group in a merge queue"
+    },
+    "milestone" : {
+        "closed" : "a milestone is closed",
+        "created" : "a milestone is created",
+        "deleted" : "a milestone is deleted",
+        "edited" : "a milestone is edited",
+        "opened" : "a milestone is opened",
+        "default" : "there is activity relating to milestones"
+    },
+    "page_build" : {
+        "default" : "there is an attempted build of a GitHub Pages site"
+    },
+    "project_card" : {
+        "converted" : "a note in a project is converted to an issue",
+        "created" : "a card is added to a project",
+        "deleted" : "a card on a project is deleted",
+        "edited" : "a note on a project is edited",
+        "moved" : "a card on a project is moved to another column or to another position in its column",
+        "default" : "there is activity relating to a card on a project"
+    },
+    "project" : {
+        "closed" : "a project is closed",
+        "created" : "a project is created",
+        "deleted" : "a project is deleted",
+        "edited" : "the name or description of a project is edited",
+        "reopened" : "a project is reopened",
+        "default" : "there is activity relating to a project"
+    },
+    "project_column" : {
+        "created" : "a column is added to a project",
+        "deleted" : "a column is deleted from a project",
+        "edited" : "the name of a column on a project is edited",
+        "moved" : "a column is moved to a new position on a project",
+        "updated" : "a column in a project is updated",
+        "default" : "there is activity relating to a column on a project"
+    },
+    "public" : {
+        "default" : "repository visibility changes from private to public"
+    },
+    "pull_request" : {
+        "assigned" : "a pull request is assigned to a user",
+        "unassigned" : "a user is unassigned from a pull request",
+        "labeled" : "a label is added to a pull request",
+        "unlabeled" : "a label is removed from a pull request",
+        "opened" : "a pull request is created",
+        "edited" : "the title or body of a pull request is edited",
+        "closed" : "a pull request is closed",
+        "reopened" : "a previously closed pull request is reopened",
+        "synchronize" : "a pull request's head branch is updated",
+        "converted_to_draft" : "a pull request is converted to a draft",
+        "ready_for_review" : "a draft pull request is marked as ready for review",
+        "locked" : "conversation on a pull request is locked",
+        "unlocked" : "conversation on a pull request is unlocked",
+        "review_requested" : "review by a person or team is requested for a pull request",
+        "review_request_removed" : "a request for review by a person or team is removed from a pull request",
+        "auto_merge_disabled" : "auto merge is disabled for a pull request",
+        "auto_merge_enabled" : "auto merge is enabled for a pull request",
+        "default" : "there is activity relating to a pull request"
+    },
+    "pull_request_review_comment" : {
+        "created" : "a comment on a pull request diff is created",
+        "deleted" : "a comment on a pull request diff is deleted",
+        "edited" : "the content of a comment on a pull request diff is changed",
+        "default" : "there is activity relating to a pull request review comment"
+    },
+    "pull_request_review" : {
+        "dismissed" : "a review on a pull request is dismissed",
+        "edited" : "the body comment on a pull request review is edited",
+        "submitted" : "a review on a pull request is submitted",
+        "default" : "there is activity relating to a pull request review"
+    },
+    "pull_request_target" : {
+        "assigned" : "a pull request is assigned to a user",
+        "unassigned" : "a user is unassigned from a pull request",
+        "labeled" : "a label is added to a pull request",
+        "unlabeled" : "a label is removed from a pull request",
+        "opened" : "a pull request is created",
+        "edited" : "the title or body of a pull request is edited",
+        "closed" : "a pull request is closed",
+        "reopened" : "a previously closed pull request is reopened",
+        "synchronize" : "a pull request's head branch is updated",
+        "converted_to_draft" : "a pull request is converted to a draft",
+        "ready_for_review" : "a draft pull request is marked as ready for review",
+        "locked" : "conversation on a pull request is locked",
+        "unlocked" : "conversation on a pull request is unlocked",
+        "review_requested" : "review by a person or team is requested for a pull request",
+        "review_request_removed" : "a request for review by a person or team is removed from a pull request",
+        "auto_merge_disabled" : "auto merge is disabled for a pull request",
+        "auto_merge_enabled" : "auto merge is enabled for a pull request",
+        "default" : "there is activity relating to a pull request"
+    },
+    "push" : {
+        "default" : "a commit or tag is pushed, or a repository is cloned"
+    },
+    "registry_package" : {
+        "published" : "a package is published to a registry",
+        "updated" : "a package that is previously published to a registry is updated",
+        "default" : "there is activity relating to GitHub Packages"
+    },
+    "release" : {
+        "created" : "a draft is saved, or a release or pre-release is published without previously being saved as a draft",
+        "deleted" : "a release, pre-release, or draft release is deleted",
+        "edited" : "the details of a release, pre-release, or draft release are edited",
+        "prereleased" : "a release is created and identified as a pre-release",
+        "published" : "a release, pre-release, or draft of a release is published",
+        "released" : "a release is published, or a pre-release is changed to a release",
+        "unpublished" : "a release or pre-release is unpublished",
+        "default" : "release activity in the repository occurs"
+    },
+    "repository_dispatch" : {
+        "default" : "a GitHub App sends a \"POST\" request to \"/repos/{owner}/{repo}/dispatches\""
+    },
+    "status" : {
+        "default" : "the status of a Git commit changes"
+    },
+    "watch" : {
+        "started" : "the workflow's repository is starred",
+        "default" : "someone starts watching the repository"
+    },
+    "workflow_dispatch" : {
+        "default" : "someone manually triggers the workflow"
+    },
+    "workflow_call" : {
+        "default" : "it is called from another workflow"
+    },
+    "workflow_run" : {
+        "completed" : "a workflow run is completed, regardless of whether the workflow is successful or unsuccessful",
+        "in_progress" : "a workflow run starts processing on a runner",
+        "requested" : "a workflow run is triggered",
+        "default" : "there is activity relating to a run of a GitHub Actions workflow"
+    },
+    "schedule" : {
+        "default" : "the scheduled time has come: "
+    }
+}
